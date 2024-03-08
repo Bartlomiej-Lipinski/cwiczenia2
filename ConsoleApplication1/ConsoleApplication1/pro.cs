@@ -18,5 +18,17 @@ namespace ConsoleApplication1
             }
             return (double)sum / arr.Length;
         }
+        static int getMax(int[] arr)
+        {
+            int max = arr[0];
+            foreach (var VARIABLE in arr)
+            {
+                if (VARIABLE > max)
+                {
+                    max = VARIABLE;
+                }
+            }
+            return max;
+        }
     }
 }
